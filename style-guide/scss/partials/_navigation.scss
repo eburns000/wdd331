@@ -1,8 +1,7 @@
 //navigation section examples on index page
 .cd-primary-nav {
     background-color: $color-1;
-}
-.cd-primary-nav ul {
+
     a:link,
     a:visited {
         color: $color-5;
@@ -20,8 +19,7 @@
 
 .cd-secondary-nav {
     background-color: $color-1;
-}
-.cd-secondary-nav {   
+
     a:link,
     a:visited {
         color: $color-2;
@@ -39,13 +37,10 @@
 
 .other-links {
     background-color: $color-1;
-}
 
-.other-links {
     a:link,
     a:visited {
         color: $color-5;
-        
     }
     a:hover {
         color: $color-3;

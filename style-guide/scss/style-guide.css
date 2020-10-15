@@ -55,25 +55,23 @@ table {
 .cd-primary-nav {
   background-color: #013E75;
 }
-
-.cd-primary-nav ul a:link,
-.cd-primary-nav ul a:visited {
+.cd-primary-nav a:link,
+.cd-primary-nav a:visited {
   color: #FFFFFF;
 }
-.cd-primary-nav ul a:hover {
+.cd-primary-nav a:hover {
   color: #D44013;
 }
-.cd-primary-nav ul a:focus {
+.cd-primary-nav a:focus {
   color: #E1B923;
 }
-.cd-primary-nav ul a:active {
+.cd-primary-nav a:active {
   color: #E1B923;
 }
 
 .cd-secondary-nav {
   background-color: #013E75;
 }
-
 .cd-secondary-nav a:link,
 .cd-secondary-nav a:visited {
   color: #99CEDC;
@@ -91,7 +89,6 @@ table {
 .other-links {
   background-color: #013E75;
 }
-
 .other-links a:link,
 .other-links a:visited {
   color: #FFFFFF;
