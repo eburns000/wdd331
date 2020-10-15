@@ -52,60 +52,6 @@ table {
   border-spacing: 0;
 }
 
-.cd-primary-nav {
-  background-color: #013E75;
-}
-.cd-primary-nav a:link,
-.cd-primary-nav a:visited {
-  color: #FFFFFF;
-}
-.cd-primary-nav a:hover {
-  color: #D44013;
-}
-.cd-primary-nav a:focus {
-  color: #E1B923;
-}
-.cd-primary-nav a:active {
-  color: #E1B923;
-}
-
-.cd-secondary-nav {
-  background-color: #013E75;
-}
-.cd-secondary-nav a:link,
-.cd-secondary-nav a:visited {
-  color: #99CEDC;
-}
-.cd-secondary-nav a:hover {
-  color: #E1B923;
-}
-.cd-secondary-nav a:focus {
-  color: #D44013;
-}
-.cd-secondary-nav a:active {
-  color: #E1B923;
-}
-
-.other-links {
-  background-color: #013E75;
-}
-.other-links a:link,
-.other-links a:visited {
-  color: #FFFFFF;
-}
-.other-links a:hover {
-  color: #D44013;
-  background-color: #E1B923;
-}
-.other-links a:focus {
-  color: #013E75;
-  background-color: #E1B923;
-}
-.other-links a:active {
-  color: #FFFFFF;
-  background-color: #D44013;
-}
-
 /* -------------------------------- 
 
 xBackground 
@@ -114,115 +60,6 @@ xBackground
 body {
   /* this is the page background */
   background-color: #013E75;
-}
-
-/* -------------------------------- 
-
-xPatterns
-
--------------------------------- */
-.cd-box, img {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #E1B923;
-  border-radius: 3px;
-  background: #FFFFFF;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px;
-}
-
-.wire {
-  background: #013E75;
-  border: none;
-  color: #FFFFFF;
-}
-
-/* -------------------------------- 
-
-xNavigation 
-
--------------------------------- */
-header {
-  background-color: #D44013;
-}
-
-.cd-logo {
-  /* logo box style */
-  background-color: #013E75;
-  width: 120px;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-logo {
-    width: 180px;
-  }
-}
-
-.cd-main-nav {
-  /* main navigation background color - full screen on small devices */
-  background: #99CEDC;
-}
-.cd-main-nav li a {
-  color: #FFFFFF;
-  border-color: #acd7e3;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-main-nav li a {
-    color: white;
-  }
-  .cd-main-nav li a.selected {
-    color: #FFFFFF;
-    box-shadow: 0 2px 0 #013E75;
-  }
-  .cd-main-nav li a:hover {
-    color: #FFFFFF;
-  }
-}
-.cd-main-nav a:link,
-.cd-main-nav a:visited {
-  color: #FFFFFF;
-}
-.cd-main-nav a:hover {
-  background-color: #013E75;
-}
-.cd-main-nav a:focus {
-  background-color: #E1B923;
-}
-.cd-main-nav a:active {
-  background-color: #E1B923;
-}
-
-.cd-nav-trigger span {
-  /* hamburger menu */
-  background-color: #FFFFFF;
-}
-.cd-nav-trigger span::before, .cd-nav-trigger span::after {
-  /* upper and lower lines */
-  background-color: #FFFFFF;
-}
-
-.nav-is-visible .cd-nav-trigger span {
-  /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(255, 255, 255, 0);
-}
-.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
-  /* preserve visibility of upper and lower lines - close icon */
-  background-color: white;
-}
-
-.cd-download {
-  /* download button top-right visible on big devices */
-  background-color: #bfe0e9;
-}
-.no-touch .cd-download:hover {
-  background-color: #d2e9f0;
-}
-.cd-download span {
-  /* tooltip */
-  background: #013E75;
-  color: #FFFFFF;
-}
-.cd-download span::before {
-  /* right arrow color */
-  border-color: #013E75;
 }
 
 /* -------------------------------- 
@@ -298,6 +135,171 @@ p a {
   p {
     font-size: 1.6rem;
     line-height: 1.6;
+  }
+}
+
+.cd-primary-nav {
+  background-color: #013E75;
+}
+.cd-primary-nav a:link,
+.cd-primary-nav a:visited {
+  color: #FFFFFF;
+}
+.cd-primary-nav a:hover {
+  color: #D44013;
+}
+.cd-primary-nav a:focus {
+  color: #E1B923;
+}
+.cd-primary-nav a:active {
+  color: #E1B923;
+}
+
+.cd-secondary-nav {
+  background-color: #013E75;
+}
+.cd-secondary-nav a:link,
+.cd-secondary-nav a:visited {
+  color: #99CEDC;
+}
+.cd-secondary-nav a:hover {
+  color: #E1B923;
+}
+.cd-secondary-nav a:focus {
+  color: #D44013;
+}
+.cd-secondary-nav a:active {
+  color: #E1B923;
+}
+
+.other-links {
+  background-color: #013E75;
+}
+.other-links a:link,
+.other-links a:visited {
+  color: #FFFFFF;
+}
+.other-links a:hover {
+  color: #D44013;
+  background-color: #E1B923;
+}
+.other-links a:focus {
+  color: #013E75;
+  background-color: #E1B923;
+}
+.other-links a:active {
+  color: #FFFFFF;
+  background-color: #D44013;
+}
+
+/* -------------------------------- 
+
+xPatterns
+
+-------------------------------- */
+.cd-box, img {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid #E1B923;
+  border-radius: 3px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+}
+
+.wire {
+  background: #013E75;
+  border: none;
+  color: #FFFFFF;
+}
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+header {
+  background-color: #D44013;
+}
+
+.cd-logo {
+  /* logo box style */
+  background-color: #013E75;
+  width: 120px;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-logo {
+    width: 180px;
+  }
+}
+
+.cd-main-nav {
+  /* main navigation background color - full screen on small devices */
+  background: #99CEDC;
+}
+.cd-main-nav li a {
+  color: #FFFFFF;
+  border-color: #acd7e3;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-main-nav li a {
+    color: white;
+  }
+  .cd-main-nav li a.selected {
+    color: #FFFFFF;
+    box-shadow: 0 2px 0 #013E75;
+  }
+  .cd-main-nav li a:hover {
+    color: #FFFFFF;
+  }
+}
+
+.cd-nav-trigger span {
+  /* hamburger menu */
+  background-color: #FFFFFF;
+}
+.cd-nav-trigger span::before, .cd-nav-trigger span::after {
+  /* upper and lower lines */
+  background-color: #FFFFFF;
+}
+
+.nav-is-visible .cd-nav-trigger span {
+  /* hide line in the center on mobile when nav is visible */
+  background-color: rgba(255, 255, 255, 0);
+}
+.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
+  /* preserve visibility of upper and lower lines - close icon */
+  background-color: white;
+}
+
+.cd-download {
+  /* download button top-right visible on big devices */
+  background-color: #bfe0e9;
+}
+.no-touch .cd-download:hover {
+  background-color: #d2e9f0;
+}
+.cd-download span {
+  /* tooltip */
+  background: #013E75;
+  color: #FFFFFF;
+}
+.cd-download span::before {
+  /* right arrow color */
+  border-color: #013E75;
+}
+
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+main > h1 {
+  color: #99CEDC;
+}
+@media only screen and (min-width: 1600px) {
+  main > h1 {
+    /* title goes into the header on big devices */
+    color: #FFFFFF;
   }
 }
 
