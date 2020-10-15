@@ -83,7 +83,7 @@ table {
   color: #D44013;
 }
 .cd-secondary-nav a:active {
-  color: #D44013;
+  color: #E1B923;
 }
 
 .other-links {
@@ -175,6 +175,19 @@ header {
   .cd-main-nav li a:hover {
     color: #FFFFFF;
   }
+}
+.cd-main-nav a:link,
+.cd-main-nav a:visited {
+  color: #FFFFFF;
+}
+.cd-main-nav a:hover {
+  background-color: #013E75;
+}
+.cd-main-nav a:focus {
+  background-color: #E1B923;
+}
+.cd-main-nav a:active {
+  background-color: #E1B923;
 }
 
 .cd-nav-trigger span {

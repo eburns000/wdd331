@@ -81,6 +81,19 @@ header {
       }
     }
   }
+  a:link,
+  a:visited {
+    color: $color-5;
+  }
+    a:hover {
+    background-color: $color-1;
+  }
+    a:focus {
+    background-color: $color-4;
+  }
+  a:active {
+    background-color: $color-4;
+  }
 }
 
 .cd-nav-trigger span {
