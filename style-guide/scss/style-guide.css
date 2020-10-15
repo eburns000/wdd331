@@ -52,6 +52,63 @@ table {
   border-spacing: 0;
 }
 
+.cd-primary-nav {
+  background-color: #013E75;
+}
+
+.cd-primary-nav ul a:link,
+.cd-primary-nav ul a:visited {
+  color: #FFFFFF;
+}
+.cd-primary-nav ul a:hover {
+  color: #D44013;
+}
+.cd-primary-nav ul a:focus {
+  color: #E1B923;
+}
+.cd-primary-nav ul a:active {
+  color: #E1B923;
+}
+
+.cd-secondary-nav {
+  background-color: #013E75;
+}
+
+.cd-secondary-nav a:link,
+.cd-secondary-nav a:visited {
+  color: #99CEDC;
+}
+.cd-secondary-nav a:hover {
+  color: #E1B923;
+}
+.cd-secondary-nav a:focus {
+  color: #D44013;
+}
+.cd-secondary-nav a:active {
+  color: #D44013;
+}
+
+.other-links {
+  background-color: #013E75;
+}
+
+.other-links a:link,
+.other-links a:visited {
+  color: #FFFFFF;
+}
+.other-links a:hover {
+  color: #D44013;
+  background-color: #E1B923;
+}
+.other-links a:focus {
+  color: #013E75;
+  background-color: #E1B923;
+}
+.other-links a:active {
+  color: #FFFFFF;
+  background-color: #D44013;
+}
+
 /* -------------------------------- 
 
 xBackground 

@@ -1,1 +1,62 @@
 //navigation section examples on index page
+.cd-primary-nav {
+    background-color: $color-1;
+}
+.cd-primary-nav ul {
+    a:link,
+    a:visited {
+        color: $color-5;
+    }
+    a:hover {
+        color: $color-3;
+    }
+    a:focus {
+        color: $color-4;
+    }
+    a:active {
+        color: $color-4;
+    }
+} // end of primary-nav
+
+.cd-secondary-nav {
+    background-color: $color-1;
+}
+.cd-secondary-nav {   
+    a:link,
+    a:visited {
+        color: $color-2;
+    }
+    a:hover {
+        color: $color-4;
+    }
+    a:focus {
+        color: $color-3;
+    }
+    a:active {
+        color: $color-3;
+    }
+}//end of secondary nav
+
+.other-links {
+    background-color: $color-1;
+}
+
+.other-links {
+    a:link,
+    a:visited {
+        color: $color-5;
+        
+    }
+    a:hover {
+        color: $color-3;
+        background-color: $color-4;
+    }
+    a:focus {
+        color: $color-1;
+        background-color: $color-4;
+    }
+    a:active {
+        color: $color-5;
+        background-color: $color-3;
+    }
+}//end of other links
