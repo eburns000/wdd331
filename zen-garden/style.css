@@ -1,9 +1,7 @@
 /* -------------------------------- 
-
 xBackground 
-
 -------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;700;900&display=swap");
 body {
   /* this is the page background */
   background-color: #013E75;
@@ -11,61 +9,59 @@ body {
 }
 
 /* -------------------------------- 
-
 xPage title 
-
 -------------------------------- */
+/*Navigation colors*/
+a:link,
+a:visited {
+  color: #E1B923;
+}
+
+a:hover {
+  color: #D44013;
+  border: 1px dotted #99CEDC;
+}
+
+a:focus,
+a:active {
+  color: #FFFFFF;
+  background-color: #D44013;
+}
+
 /* -------------------------------- 
-
 xTypography 
-
 -------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
   font-family: "Poppins", sans-serif;
 }
-* .intro h1 body {
-  /* use display: inline; when using more then one line of text. I still can't figure out how to center the text this way though. But it allows me to see all the text.
-      display: inline; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #000;
-  margin: 100px;
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 6em;
+  color: #E1B923;
+  text-shadow: 0 0 10px #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
 }
-* .intro h1 {
-  position: relative;
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+  text-align: center;
+  color: #E1B923;
 }
-* .intro header h1 {
-  position: absolute;
-  /* remove the transform rule here for more then one line of text. 	*/
-  transform: translate(-50%, -50%);
-  font-size: 4em;
-  top: 200px;
-  left: 500px;
-}
-* .intro h1:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 2px #03a9f4;
-}
-* .intro h1:nth-child(2) {
-  color: #03a9f4;
-  animation: animate 3s ease-in-out infinite;
-}
-@keyframes animate {
-  0%, 100% {
-    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-  }
-  50% {
-    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-  }
+
+h3 {
+  font-family: "Merriweather", serif;
+  font-size: 1.25em;
+  text-align: center;
+  color: #E1B923;
 }
 
 body {
   padding: 50px;
+  max-width: 60rem;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
