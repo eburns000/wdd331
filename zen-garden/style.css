@@ -15,17 +15,20 @@ xPage title
 a:link,
 a:visited {
   color: #E1B923;
+  text-decoration: none;
 }
 
 a:hover {
   color: #D44013;
   border: 1px dotted #99CEDC;
+  text-decoration: underline;
 }
 
 a:focus,
 a:active {
   color: #FFFFFF;
   background-color: #D44013;
+  text-decoration: underline;
 }
 
 /* -------------------------------- 
@@ -72,11 +75,41 @@ li {
 p {
   text-align: justify;
   text-justify: inter-word;
+  padding: 0 5em;
 }
 
-.summary, .preamble, .supporting, .participation, .benefits, .requirements {
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
   column-width: 400px;
-  column-gap: 80px;
+  column-gap: 10px;
+}
+
+.main footer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.main footer a {
+  background-color: #03a9f4;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.main footer a:hover {
+  color: #D44013;
+}
+
+.main footer a:focus,
+a:active {
+  color: #013E75;
 }
 
 /*# sourceMappingURL=style.css.map */

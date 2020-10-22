@@ -13,10 +13,36 @@ li {list-style-type: none;}
 p{
     text-align: justify;
     text-justify: inter-word;
+    padding:0 5em;
 }
 
-.summary, .preamble, .supporting, .participation, .benefits, .requirements {
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
     column-width: 400px;
-    column-gap: 80px;
+    column-gap: 10px;
 }
+
+.main footer{display: flex;
+    justify-content: center;
+    margin:20px;}
+
+.main footer a {  
+    background-color: #03a9f4;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+        
+.main footer a:hover {
+    color: $color-3;}
+
+.main footer a:focus,
+a:active {
+  color: $color-1;}
 

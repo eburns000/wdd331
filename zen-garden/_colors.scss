@@ -29,17 +29,20 @@ xPage title
 a:link,
 a:visited {
   color: $color-4;
+  text-decoration: none;
 }
 
 a:hover {
   color: $color-3;
   border: 1px dotted $color-2;
+  text-decoration: underline;
 }
 
 a:focus,
 a:active {
   color: $color-5;
   background-color: $color-3;
+  text-decoration: underline;
 }
 
 
