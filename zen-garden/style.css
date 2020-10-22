@@ -69,14 +69,13 @@ h1 {
   /*text-shadow: 0 0 10px #FFFFFF; */
   text-align: center;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #e1b923, #fff, #e1b923);
+  background: linear-gradient(90deg, #E1B923, #FFFFFF, #E1B923);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
-
 @keyframes animate {
   0% {
     background-position: -500%;
@@ -85,6 +84,7 @@ h1 {
     background-position: 500%;
   }
 }
+
 body {
   padding: 50px;
   max-width: 60rem;

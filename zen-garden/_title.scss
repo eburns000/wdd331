@@ -9,13 +9,13 @@ h1 {
   
     
    
-    background: linear-gradient(90deg, #e1b923, #fff, #e1b923);
+    background: linear-gradient(90deg, $color-4, $color-5, $color-4);
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 3s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  }
+  
   
   @keyframes animate {
     0% {
@@ -25,4 +25,4 @@ h1 {
       background-position: 500%;
     }
   }
-    
+}  
