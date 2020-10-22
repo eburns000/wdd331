@@ -39,9 +39,10 @@ h1 {
   font-family: "Merriweather", serif;
   font-size: 6em;
   color: #E1B923;
-  text-shadow: 0 0 10px #FFFFFF;
   text-align: center;
   text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
 }
 
 h2 {
@@ -62,6 +63,20 @@ body {
   padding: 50px;
   max-width: 60rem;
   margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.summary, .preamble, .supporting, .participation, .benefits, .requirements {
+  column-width: 400px;
+  column-gap: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

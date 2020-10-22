@@ -8,8 +8,15 @@ body{
 	margin: auto;
 }
 
+li {list-style-type: none;}
 
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
 
-
-
+.summary, .preamble, .supporting, .participation, .benefits, .requirements {
+    column-width: 400px;
+    column-gap: 80px;
+}
 
