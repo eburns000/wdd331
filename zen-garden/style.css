@@ -37,16 +37,37 @@ a:active {
 xTypography 
 
 -------------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-family: "Merriweather", serif;
   font-size: 6em;
-  text-shadow: 0 0 10px #99CEDC;
+  color: #E1B923;
+  text-shadow: 0 0 10px #FFFFFF;
   text-align: center;
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+  text-align: center;
+  color: #E1B923;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  font-size: 1.25em;
+  text-align: center;
+  color: #E1B923;
+}
+
 body {
   padding: 50px;
+  max-width: 60rem;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,11 +9,29 @@ $secondary-font: 'Poppins', sans-serif;
 xTypography 
 
 -------------------------------- */
+body {
+    font-family: $secondary-font;
+}
+
 h1 {
     font-family: $primary-font;
     font-size: 6em;
-    text-shadow: 0 0 10px $color-2;
+    color: $color-4;
+    text-shadow: 0 0 10px $color-5;
     text-align: center;
     text-transform: uppercase;
-
 }
+h2 {
+    font-family: $primary-font;
+    font-size: 2em;
+    text-align: center;
+    color: $color-4;
+}
+
+h3 {
+    font-family: $primary-font;
+    font-size: 1.25em;
+    text-align: center;
+    color: $color-4;
+}
+
