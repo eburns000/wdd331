@@ -1,0 +1,28 @@
+h1 {
+
+    font-family: "Merriweather", serif;
+    font-size: 6em;
+    color: #E1B923;
+    /*text-shadow: 0 0 10px #FFFFFF; */
+    text-align: center;
+    text-transform: uppercase;
+  
+    
+   
+    background: linear-gradient(90deg, $color-4, $color-5, $color-4);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+}  
