@@ -1,0 +1,132 @@
+.page-wrapper {
+    //width: 100vw;
+    //height: 100vh;
+    display: grid;
+    grid-template-columns:200px 800px 200px;
+   //display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .supporting{
+    height: 500px;
+    //padding-left:15px;
+    overflow: hidden;
+    margin-top:6em;  
+  }
+  
+  .supporting div {
+    color:$color-1;
+    height: auto;
+    margin:0 50px;
+    padding: 2px 50px 2px 50px;
+    box-sizing: border-box;
+    width:600px;
+  }
+  .explanation {
+    background: lightgreen;
+    animation: slide 10s linear infinite;
+  }
+  .participation {
+    background: skyblue;
+  }
+  .benefits {
+    background: lightcoral;
+  }
+
+  .requirements {
+    background: #FFFF66;
+  }
+  @keyframes slide {
+    0% {margin-top:-1800px;}
+    5% {margin-top:-1700px;}
+    10% {margin-top:-1600px;}
+    15% {margin-top:-1500px;}
+    20% {margin-top:-1400px;}
+    25% {margin-top:-1300px;}
+    30% {margin-top:-1200px;}
+    35% {margin-top:-1100px;}
+    40% {margin-top:-1000px;}
+    45% {margin-top:-900px;}
+    50% {margin-top:-800px;}
+    55% {margin-top:-700px;}
+    60% {margin-top:-600px;}
+    65% {margin-top:-500px;}
+    70% {margin-top:-400px;}
+    75% {margin-top:-300px;}
+    80% {margin-top:-200px;}
+    85% {margin-top:-100px;}
+    90% {margin-top:-50px;}
+    95% {margin-top:-10px;}
+    100% {margin-top:0px;}
+  }
+  .sidebar {font-size: small;}
+
+.extra1{
+    position:absolute;
+    background-image: url("images/yellow-fish.png");
+    background-repeat: no-repeat;
+    z-index: -3;
+    width:300px;
+    height:200px;
+    bottom:300px;
+    left:0;
+    animation: slide-fish 5s forwards infinite;
+    overflow: hidden;
+    transform: scale(0.7);
+    }
+
+    @keyframes slide-fish {
+        0%   {left: 0;}
+        25%  {left: 400px;}
+        50%  {left: 800px;}
+        100% {left:1200px;}
+      }
+      
+.extra2{
+    background-image: url("images/blue-fish.png");
+    background-repeat: no-repeat;
+    z-index: 3;
+    position:absolute;
+    animation: slide-fish 5s reverse infinite;
+    width:800px;
+    height:300px;
+    left:0;
+    top:500px;
+    overflow: hidden;
+    transform: scale(0.7);
+}
+
+div.extra3{
+    //display:block;
+    position:absolute;
+    background-image: url("images/old-tv2.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+    top:250px;
+    left:300px;
+    width:800px;
+    height:567px;
+}
+
+.extra4{
+    background-image: url("images/bubbles.png");
+    background-repeat: repeat;
+    z-index:1;
+    position:absolute;
+    animation:animatebubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    width:500px;
+    height:500px;
+	left:100px;
+	top:500px;
+	//transform: scale(0.6);
+}
+
+@keyframes animatebubble {
+    0% {
+        margin-top: 500px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
