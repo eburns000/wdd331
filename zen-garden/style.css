@@ -4,7 +4,7 @@ xBackground
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;700;900&display=swap");
 body {
   /* this is the page background */
-  background-color: #013E75;
+  background: #01315c;
   color: #FFFFFF;
 }
 
@@ -72,7 +72,7 @@ h1 {
   background: linear-gradient(90deg, #E1B923, #FFFFFF, #E1B923);
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: animate 3s linear infinite;
+  animation: animate 5s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
@@ -87,29 +87,38 @@ h1 {
 
 .page-wrapper {
   display: grid;
-  grid-template-columns: 200px 800px 200px;
+  grid-template-columns: 200px 650px 240px;
   align-items: center;
   justify-content: center;
 }
 
 .supporting {
-  height: 500px;
+  height: 380px;
+  padding-left: 45px;
   overflow: hidden;
   margin-top: 6em;
+  /*background-image: url("images/old-tv2.png");
+  background-repeat: no-repeat; */
 }
 
+/*.supporting:before{
+  content: " text"; 
+  display:block;
+  background-image: url("images/old-tv2.png");
+  background-repeat: no-repeat;
+  z-index:1;
+  height:500px;
+}*/
 .supporting div {
   color: #013E75;
-  height: auto;
-  margin: 0 50px;
   padding: 2px 50px 2px 50px;
   box-sizing: border-box;
-  width: 600px;
+  width: 500px;
 }
 
 .explanation {
   background: lightgreen;
-  animation: slide 10s linear infinite;
+  animation: slide 20s linear infinite;
 }
 
 .participation {
@@ -128,73 +137,35 @@ h1 {
   0% {
     margin-top: -1800px;
   }
-  5% {
-    margin-top: -1700px;
-  }
-  10% {
-    margin-top: -1600px;
-  }
-  15% {
-    margin-top: -1500px;
-  }
-  20% {
-    margin-top: -1400px;
-  }
-  25% {
-    margin-top: -1300px;
-  }
-  30% {
-    margin-top: -1200px;
-  }
-  35% {
-    margin-top: -1100px;
-  }
-  40% {
-    margin-top: -1000px;
-  }
-  45% {
-    margin-top: -900px;
-  }
-  50% {
-    margin-top: -800px;
-  }
-  55% {
-    margin-top: -700px;
-  }
-  60% {
-    margin-top: -600px;
-  }
-  65% {
-    margin-top: -500px;
-  }
-  70% {
-    margin-top: -400px;
-  }
-  75% {
-    margin-top: -300px;
-  }
-  80% {
-    margin-top: -200px;
-  }
-  85% {
-    margin-top: -100px;
-  }
-  90% {
-    margin-top: -50px;
-  }
-  95% {
-    margin-top: -10px;
-  }
   100% {
     margin-top: 0px;
   }
 }
-.sidebar {
-  font-size: small;
-}
-
+/*@keyframes slide {
+  0% {margin-top:-1800px;}
+  5% {margin-top:-1700px;}
+  10% {margin-top:-1600px;}
+  15% {margin-top:-1500px;}
+  20% {margin-top:-1400px;}
+  25% {margin-top:-1300px;}
+  30% {margin-top:-1200px;}
+  35% {margin-top:-1100px;}
+  40% {margin-top:-1000px;}
+  45% {margin-top:-900px;}
+  50% {margin-top:-800px;}
+  55% {margin-top:-700px;}
+  60% {margin-top:-600px;}
+  65% {margin-top:-500px;}
+  70% {margin-top:-400px;}
+  75% {margin-top:-300px;}
+  80% {margin-top:-200px;}
+  85% {margin-top:-100px;}
+  90% {margin-top:-50px;}
+  95% {margin-top:-10px;}
+  100% {margin-top:0px;}
+}*/
 .extra1 {
-  position: absolute;
+  position: fixed;
   background-image: url("images/yellow-fish.png");
   background-repeat: no-repeat;
   z-index: -3;
@@ -225,7 +196,7 @@ h1 {
   background-image: url("images/blue-fish.png");
   background-repeat: no-repeat;
   z-index: 3;
-  position: absolute;
+  position: fixed;
   animation: slide-fish 5s reverse infinite;
   width: 800px;
   height: 300px;
@@ -240,27 +211,26 @@ div.extra3 {
   background-image: url("images/old-tv2.png");
   background-repeat: no-repeat;
   z-index: 1;
-  top: 250px;
-  left: 300px;
+  top: 160px;
+  left: 280px;
   width: 800px;
   height: 567px;
+  transform: scale(0.8);
 }
 
 .extra4 {
   background-image: url("images/bubbles.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   z-index: 1;
-  position: absolute;
-  animation: animatebubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  position: fixed;
+  animation: animatebubble 8s linear infinite;
   width: 500px;
   height: 500px;
-  left: 100px;
-  top: 500px;
 }
 
 @keyframes animatebubble {
   0% {
-    margin-top: 500px;
+    margin-top: 100%;
   }
   100% {
     margin-top: -100%;
@@ -268,9 +238,10 @@ div.extra3 {
 }
 .main footer {
   position: absolute;
-  top: 850px;
-  left: 450px;
+  top: 690px;
+  left: 420px;
   justify-content: center;
+  display: flex;
   margin: 20px;
 }
 
@@ -282,7 +253,7 @@ div.extra3 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   margin: 4px 10px;
   cursor: pointer;
   background: linear-gradient(top, #34696f, #2f5f63);
@@ -304,12 +275,22 @@ a:active {
 body {
   padding: 50px;
   max-width: 60rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .intro header h1, h2 {
-  width: 1200px;
+  width: 1100px;
   margin: 0;
+  text-align: center;
+}
+
+.intro header h1 {
+  margin-top: -0.5em;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: 100;
 }
 
 .intro p {
@@ -323,6 +304,26 @@ li {
 p {
   text-align: justify;
   text-justify: inter-word;
+}
+
+/*
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: lightblue;
+      display:block;
+      width: 600px;
+      margin: auto;
+    }
+  }
+
+.summary, .preamble, .design-selection, .design-archives, .zen-resources{visibility: hidden;}*/
+.summary p, .preamble p {
+  line-height: 110%;
+}
+
+.sidebar {
+  font-size: small;
+  margin-top: 6em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 h1 {
 
+
     font-family: "Merriweather", serif;
     font-size: 6em;
     color: #E1B923;
@@ -12,7 +13,7 @@ h1 {
     background: linear-gradient(90deg, $color-4, $color-5, $color-4);
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: animate 3s linear infinite;
+    animation: animate 5s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
   

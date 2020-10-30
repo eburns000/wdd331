@@ -17,7 +17,8 @@ xBackground
 
 body {
     /* this is the page background */
-    background-color: $color-1;
+    //background-color: $color-1;
+    background: darken($color-1, 5%);
     color: $color-5;
   }
 
