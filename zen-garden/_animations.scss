@@ -92,16 +92,16 @@
     height:200px;
     bottom:300px;
     left:0;
-    animation: slide-fish 5s forwards infinite;
+    animation: slide-fish 8s forwards infinite;
     overflow: hidden;
     transform: scale(0.7);
     }
 
     @keyframes slide-fish {
-        0%   {left: 0;}
+        0%   {left: -400px;}
         25%  {left: 400px;}
         50%  {left: 800px;}
-        100% {left:1200px;}
+        100% {left:2000px;}
       }
       
 .extra2{
@@ -109,10 +109,10 @@
     background-repeat: no-repeat;
     z-index: 3;
     position: fixed;
-    animation: slide-fish 5s reverse infinite;
+    animation: slide-fish 10s reverse infinite;
     width:800px;
     height:300px;
-    left:0;
+    left:-100px;
     top:400px;
     overflow: hidden;
     transform: scale(0.7);
