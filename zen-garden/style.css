@@ -66,7 +66,6 @@ h1 {
   font-family: "Merriweather", serif;
   font-size: 6em;
   color: #E1B923;
-  /*text-shadow: 0 0 10px #FFFFFF; */
   text-align: center;
   text-transform: uppercase;
   background: linear-gradient(90deg, #E1B923, #FFFFFF, #E1B923);
@@ -87,33 +86,55 @@ h1 {
 
 .page-wrapper {
   display: grid;
-  grid-template-columns: 200px 650px 240px;
+  grid-template-columns: repeat(15, 1fr);
   align-items: center;
   justify-content: center;
 }
 
+.page-wrapper::before {
+   content: "";
+   position: absolute;
+   background-image: url("images/old-tv2.png");
+   background-repeat: no-repeat;
+   z-index: 3;
+   top: 230px;
+   left: 17%;
+   width: 63%;
+   height: 567px;
+   transform: scale(0.8);
+   /* display: none; - use in media query when width is less than 80em */
+}
+
+.intro {
+   grid-column-start: 1;
+   grid-column-end: 7;
+   grid-row-start: 2;
+}
+
 .supporting {
+  position: absolute;
+  left: 21.5%;
+  top: 100px;
+  width: 475px;
+  z-index: 1;
   height: 380px;
   padding-left: 45px;
   overflow: hidden;
-  margin-top: 6em;
-  /*background-image: url("images/old-tv2.png");
-  background-repeat: no-repeat; */
+  margin-top: 12em;
 }
 
-/*.supporting:before{
-  content: " text"; 
-  display:block;
-  background-image: url("images/old-tv2.png");
-  background-repeat: no-repeat;
-  z-index:1;
-  height:500px;
-}*/
+.sidebar {
+   grid-column-start: 12;
+   grid-column-end: 16;
+   grid-row-start: 2;
+   font-size: 12px;
+   margin-top: 16em;
+}
+
 .supporting div {
   color: #013E75;
   padding: 2px 50px 2px 50px;
   box-sizing: border-box;
-  width: 500px;
 }
 
 .explanation {
@@ -144,36 +165,14 @@ h1 {
 
 @keyframes slide {
   0% {
-    margin-top: -2000px;
+    margin-top: -1500px;
   }
   100% {
     margin-top: 0px;
   }
 }
-/*@keyframes slide {
-  0% {margin-top:-1800px;}
-  5% {margin-top:-1700px;}
-  10% {margin-top:-1600px;}
-  15% {margin-top:-1500px;}
-  20% {margin-top:-1400px;}
-  25% {margin-top:-1300px;}
-  30% {margin-top:-1200px;}
-  35% {margin-top:-1100px;}
-  40% {margin-top:-1000px;}
-  45% {margin-top:-900px;}
-  50% {margin-top:-800px;}
-  55% {margin-top:-700px;}
-  60% {margin-top:-600px;}
-  65% {margin-top:-500px;}
-  70% {margin-top:-400px;}
-  75% {margin-top:-300px;}
-  80% {margin-top:-200px;}
-  85% {margin-top:-100px;}
-  90% {margin-top:-50px;}
-  95% {margin-top:-10px;}
-  100% {margin-top:0px;}
-}*/
-.extra1 {
+
+/* .extra1 {
   position: fixed;
   background-image: url("images/yellow-fish.png");
   background-repeat: no-repeat;
@@ -185,6 +184,21 @@ h1 {
   animation: slide-fish 8s forwards infinite;
   overflow: hidden;
   transform: scale(0.7);
+} */
+
+body::after {
+   content: "";
+   position: fixed;
+   background-image: url("images/yellow-fish.png");
+   background-repeat: no-repeat;
+   z-index: -3;
+   width: 300px;
+   height: 200px;
+   bottom: 300px;
+   left: 0;
+   animation: slide-fish 8s forwards infinite;
+   overflow: hidden;
+   transform: scale(0.7);
 }
 
 @keyframes slide-fish {
@@ -201,6 +215,7 @@ h1 {
     left: 2000px;
   }
 }
+
 .extra2 {
   background-image: url("images/blue-fish.png");
   background-repeat: no-repeat;
@@ -215,17 +230,17 @@ h1 {
   transform: scale(0.7);
 }
 
-div.extra3 {
+/* div.extra3 {
   position: absolute;
   background-image: url("images/old-tv2.png");
   background-repeat: no-repeat;
   z-index: 1;
-  top: 145px;
-  left: 280px;
-  width: 800px;
+  top: 230px;
+  left: 17%;
+  width: 63%;
   height: 567px;
   transform: scale(0.8);
-}
+} */
 
 .extra4 {
   background-image: url("images/bubbles.png");
@@ -252,8 +267,8 @@ div.extra3 {
   position: fixed;
   animation: MoveUpDown 25s linear infinite;
   width: 200px;
-  height: 1500px;
-  left: 10px;
+  height: 2000px;
+  left: 85%;
   bottom: 0;
 }
 
@@ -269,12 +284,11 @@ div.extra3 {
   }
 }
 .main footer {
-  position: absolute;
-  top: 690px;
-  left: 420px;
+  position: fixed;
+  top: 87.5%;
+  left: 35%;
   justify-content: center;
   display: flex;
-  margin: 20px;
 }
 
 .main footer a {
@@ -305,19 +319,19 @@ a:active {
 }
 
 body {
-  padding: 50px;
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .intro header h1, h2 {
-  width: 1100px;
+  width: 250%;
   margin: 0;
   text-align: center;
 }
 
 .intro header h1 {
-  margin-top: -0.5em;
+  margin-top: 1.0em;
 }
 
 h2 {
@@ -326,7 +340,6 @@ h2 {
 }
 
 .intro p {
-  font-size: small;
   font-size: 12px;
 }
 
@@ -334,29 +347,7 @@ li {
   list-style-type: none;
 }
 
-p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-/*
-@media only screen and (min-width: 600px) {
-    body {
-      background-color: lightblue;
-      display:block;
-      width: 600px;
-      margin: auto;
-    }
-  }
-
-.summary, .preamble, .design-selection, .design-archives, .zen-resources{visibility: hidden;}*/
-.summary p, .preamble p {
+.summary, .preamble {
   line-height: 110%;
+  width: 52%;
 }
-
-.sidebar {
-  font-size: 12px;
-  margin-top: 6em;
-}
-
-/*# sourceMappingURL=style.css.map */
