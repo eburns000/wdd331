@@ -1,0 +1,30 @@
+@media only screen and (min-width: 20rem) and (max-width: 34rem) {
+
+    body{padding:50px;}
+  
+    h2{font-size: 1.5em;}
+  
+    body::after {
+      content: "";
+      position: absolute;
+      background-image: url("images/yellow-fish.png");
+      background-repeat: no-repeat;
+      z-index: -3;
+      width: 300px;
+      height: 200px;
+      bottom: 300px;
+      top:2700px;
+      left: 0;
+      animation: slide-fish 5s forwards infinite;
+      overflow: hidden;
+      transform: scale(0.7);
+     }
+     
+     @keyframes slide-fish {
+     0% {left: -100px;}
+     25% {left: 100px;}
+     50% {left: 300px;}
+     100% {left: 500px;}
+    }
+
+}
