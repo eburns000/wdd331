@@ -1,9 +1,8 @@
 .main footer {
-
-  top: 87.5%;
-  left: 35%;
   justify-content: center;
   display: flex;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .main footer a {
@@ -21,6 +20,7 @@
   border: solid 1px #2f5f63;
   box-shadow: 4px 4px 0 #1b383b;
   text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+  width: 80px;
 }
 
 .main footer a:hover {

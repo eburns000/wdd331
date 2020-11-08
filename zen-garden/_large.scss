@@ -1,213 +1,242 @@
-@media only screen and (min-width: 60rem) {
-	
-	h1 {
-  font-size: 6em;
-	}
-	
-	.intro header h1, h2 {
-  width: 1100px;
-	}
-	
-	.intro p {
-  font-size: 12px;
+@media only screen and (min-width: 80rem) {
+
+  .intro header h1 {
+    font-size: 6em;
+  }
+
+  .intro header h2 {
+    font-size: 2em;
+  }
+
+  .page-wrapper {
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 200px repeat(9, 10%);
+  }
+
+  .intro {
+    grid-column: 1 / 4;
+    grid-row: 1 / 11;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 200px repeat(9, 10%);
+  }
+
+  .intro header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .summary {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding-right: 2em;
+  }
+
+  .summary p:first-child {
+    margin-top: 0;
+  }
+
+  .preamble {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  // child of page-wrapper - sibling of intro
+  .supporting {
+    grid-column: 2 / 3;
+    grid-row: 1 / 10;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 370px auto;
+  }
+
+  // .supporting {
+  //   position: absolute;
+  //   left: 21.5%;
+  //   top: 50px;
+  //   width: 475px;
+  //   z-index: 1;
+  //   height: 380px;
+  //   padding-left: 45px;
+  //   overflow: hidden;
+  //   margin-top: 12em;
+  // }
+
+  .explanation {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .participation {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .benefits {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .requirements {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .supporting footer {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin-top: 4.5em;
+  }
+
+  .sidebar {
+    grid-column: 3 / 4;
+    grid-row: 2 / 11;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: start;
+    text-align: left;
+    padding-left: 4em;
+  }
+
+  .design-selection {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .design-archives {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .zen-resources {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .design-selection h3 {
+    margin-top: 0;
+  }
+
+  .explanation,
+  .participation,
+  .benefits,
+  .requirements {
+    border: none;
+    margin: 0 2em;
+    padding: 2em;
+    padding-right: 9em;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+  .preamble {
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    background: transparent;
+    margin: 0;
+    margin-top: 2em;
+    padding: 0;
+    padding-right: 2em;
+  }
+
+  .page-wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("images/old-tv2.png");
+    background-repeat: no-repeat;
+    z-index: 10;
+    top: 164px;
+    left: 19.5%;
+    width: 63%;
+    height: 567px;
+    transform: scale(0.75);
+    /* display: none; - use in media query when width is less than 80em */
+  }
+
+  .explanation {
+    background: lighten($color-1, 45%);
+    z-index: 1;
+    overflow: hidden;
+    animation: zchange 2s infinite linear; //slide 8s linear infinite,
+  }
+
+  // .sequenced-thing {
+  //   animation: 
+  //     sequence1 1s 2,
+  //     sequence2 3s 1s 1 forwards;
+  // }
+
+  // consider stepping into the index. You would start the first at 10, then go to 5, the one at 9 will go to 4 the one at 8 will go to 3, etc. until the one at 6 will go to 1, with it scrolling first and then sequenced to the next one
+
+  .participation {
+    background: $color-2;
+    z-index: 2;
+    overflow: hidden;
+    animation: zchange 2s infinite linear; //slide 8s linear infinite,
+  }
+
+  .participation h3,
+  .benefits h3 {
+    color: darken($color-1, 5%);
+  }
+
+  .benefits {
+    background: lighten($color-3, 18%);
+    z-index: 3;
+    overflow: hidden;
+    animation: zchange 2s infinite linear; //slide 8s linear infinite,
+  }
+
+  .requirements {
+    background: $color-4;
+    z-index: 4;
+    overflow: hidden;
+    animation: zchange 2s infinite linear; //slide 8s linear infinite,
+  }
+
+  .requirements h3 {
+    color: darken($color-1, 5%)
+  }
+
+  .requirements a,
+  .participation a {
+    color: darken($color-3, 5%)
+  }  
+
+  // keyframes for slide for explanation, participation, benefits, and requirements
+  @keyframes slide {
+    0% {
+      margin-top: 400px;
+    }
+
+    100% {
+      margin-top: -1000px;
+    }
+  }
+
+  @keyframes zchange {
+    50% {
+      z-index: 5;
+    }
+  }
+
+  @keyframes animatebubble {
+    0% {
+      margin-top: 0%;
+    }
+
+    100% {
+      margin-top: -150%;
+    }
+  }
+
 }
-	
-	.main footer {
-  position: fixed;
-	}
-	
-	.summary, .preamble {
-  line-height: 110%;
-  width: 52%;
-	}
 
-
-
-	.page-wrapper {
-		display: grid;
-		grid-template-columns: repeat(15, 1fr);
-		align-items: center;
-		justify-content: center;
-	  }
-	  
-	  .page-wrapper::before {
-		 content: "";
-		 position: absolute;
-		 background-image: url("images/old-tv2.png");
-		 background-repeat: no-repeat;
-		 z-index: 3;
-		 top: 150px;
-		 left: 17%;
-		 width: 63%;
-		 height: 567px;
-		 transform: scale(0.8);
-		 /* display: none; - use in media query when width is less than 80em */
-	  }
-		  
-	   .supporting {
-		position: absolute;
-		left: 21.5%;
-		top: 50px;
-		width: 475px;
-		z-index: 1;
-		height: 380px;
-		padding-left: 45px;
-		overflow: hidden;
-		margin-top: 12em;
-	  }
-		  
-	  .supporting div {
-		color:darken($color-1, 5%);
-		padding: 2px 50px 2px 50px;
-		box-sizing: border-box;
-	  }
-	  
-	  .explanation {
-		background:lighten($color-1, 45%);
-		animation: slide 20s linear infinite;
-	  }
-	  
-	  .participation {
-		background: $color-2;
-	  }
-	  .participation h3, .benefits h3 {
-		color: darken($color-1, 5%);
-	  }
-	  
-	  .benefits {
-		background: lighten($color-3, 18%);
-	  }
-	  
-	  .requirements {
-		background: $color-4;
-	  }
-	  .requirements h3 {
-		color: darken($color-1, 5%)
-	  }
-	  .requirements a, .participation a {
-		color: darken($color-3, 5%)
-	  }
-	  
-	  @keyframes slide {
-		0% {
-		  margin-top: -1500px;
-		}
-		100% {
-		  margin-top: 0px;
-		}
-	  }
-	  
-	  /* .extra1 {
-		position: fixed;
-		background-image: url("images/yellow-fish.png");
-		background-repeat: no-repeat;
-		z-index: -3;
-		width: 300px;
-		height: 200px;
-		bottom: 300px;
-		left: 0;
-		animation: slide-fish 8s forwards infinite;
-		overflow: hidden;
-		transform: scale(0.7);
-	  } */
-	  
-	  body::after {
-		 content: "";
-		 position: fixed;
-		 background-image: url("images/yellow-fish.png");
-		 background-repeat: no-repeat;
-		 z-index: -3;
-		 width: 300px;
-		 height: 200px;
-		 bottom: 300px;
-		 left: 0;
-		 animation: slide-fish 8s forwards infinite;
-		 overflow: hidden;
-		 transform: scale(0.7);
-	  }
-	  
-	  @keyframes slide-fish {
-		0% {
-		  left: -400px;
-		}
-		25% {
-		  left: 400px;
-		}
-		50% {
-		  left: 800px;
-		}
-		100% {
-		  left: 2000px;
-		}
-	  }
-	  
-	  .extra2 {
-		background-image: url("images/blue-fish.png");
-		background-repeat: no-repeat;
-		z-index: 3;
-		position: fixed;
-		animation: slide-fish 10s reverse infinite;
-		width: 800px;
-		height: 300px;
-		left: -100px;
-		top: 450px;
-		overflow: hidden;
-		transform: scale(0.7);
-	  }
-	  
-	  /* div.extra3 {
-		position: absolute;
-		background-image: url("images/old-tv2.png");
-		background-repeat: no-repeat;
-		z-index: 1;
-		top: 230px;
-		left: 17%;
-		width: 63%;
-		height: 567px;
-		transform: scale(0.8);
-	  } */
-	  
-	  .extra4 {
-		background-image: url("images/bubbles.png");
-		background-repeat: no-repeat;
-		z-index: 1;
-		position: fixed;
-		animation: animatebubble 15s linear infinite;
-		width: 500px;
-		height: 500px;
-	  }
-	  
-	  @keyframes animatebubble {
-		0% {
-		  margin-top: 0%;
-		}
-		100% {
-		  margin-top: -150%;
-		}
-	  }
-	  .extra5 {
-		background-image: url("images/boot.png");
-		background-repeat: no-repeat;
-		z-index: 1;
-		position: fixed;
-		animation: MoveUpDown 25s linear infinite;
-		width: 200px;
-		height: 2000px;
-		left: 85%;
-		bottom: 0;
-	  }
-	  
-	  @keyframes MoveUpDown {
-		0% {
-		  bottom: -1200px;
-		}
-		50% {
-		  bottom: -180px;
-		}
-		100% {
-		  bottom: -800px;
-		}
-	  }
-	  
-
-} /*end of media query */
+/*end of media query */
