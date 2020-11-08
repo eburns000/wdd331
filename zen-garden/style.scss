@@ -3,7 +3,6 @@
 @import "footer";
 @import "title";
 
-
 // reset
 *,
 *::before,
@@ -11,54 +10,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.sidebar {
-  font-size: 12px;
-}
-
-.intro header h1, .intro header h2 {
-  text-align: center;
-}
-
-p {
-  margin-top: 0.5em;
-  line-height: 140%;
-}
-
-.summary p:first-child {
-  margin-top: 1.5em;
-}
-
-.wrapper {
-  text-align: center;
-
-  li {
-    list-style-type: none;
-  }
-
-  h3 {
-    margin-top: 1.5em;
-  }
-
-  ul {
-    margin-top: 0.5em;
-  }
-
-}
-
-.preamble,
-.explanation,
-.participation,
-.benefits,
-.requirements {
-  border: 3px solid #444444;
-  margin-top: 2em;
-  padding: 1em;
-  background-color: #444444;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 // media queries
